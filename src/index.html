@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__title">
+                Практическое обучение и экзаменация по front-end
+            </div>
+        </div>
+    </header>
+
+    <section class="nouislider">
+        <div class="container">
+            <div class="nouislider__header">
+                Бегунок
+            </div>
+            <div class="nouislider__slider">
+                <div id="slider"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="container">
+            <div class="slider__header">Слайдер</div>
+            <div class="slider__wrapper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" ><img src="img/slide1.jpg" alt="image"></div>
+                        <div class="swiper-slide" ><img src="img/slide2.jpg" alt="image"></div>
+                        <div class="swiper-slide" ><img src="img/slide3.jpg" alt="image"></div>
+                    </div>
+                    <div class="swiper-button-prev"><img src="icons/arrow-prev.png" alt="image"></div>
+                    <div class="swiper-button-next"><img src="icons/arrow-next.png" alt="image"></div>
+                </div>
+                <div class="slider__slides">
+                    <div class="slider__count">Выбранный слайд: <span >01</span></div>
+                    <div class="slider__total">Всего слайдов: <span></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container">
+            <div class="map__header">Карта</div>
+            <div class="map__container" id="map">
+                <div class ="markCoords" data-centerMapX="44.46811631652961" data-centerMapY="11.156833816540615"></div>
+                <div class ="markCoords" data-Placemark1X="44.467927586047225" data-Placemark1Y="11.156859232195432"></div>
+                <div class ="markCoords" data-Placemark2X="44.46800484643418" data-Placemark2Y="11.165971289844379"></div>
+                <div class ="markCoords" data-Placemark3X="44.47164331671082" data-Placemark3Y="11.156214928604156"></div>
+                
+                <div class ="activeCoords" data-PlacemarkX="" data-PlacemarkY=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal">
+        <div class="container">
+            <div class="modal__header">Кнопка с модальным окном</div>
+            <button class="modal__btn">Открыть модальное окно
+                <a data-fancybox data-src="#hidden-content" href="javascript:;"></a>
+            </button>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+            <div class="form__header">Форма</div>
+            <form action="#" class="feed-form" novalidate>
+                <div class="form__inputs">
+                    <div class="form__inputs-wrapper">
+                        <div class="form__inputs-tel">
+                            <label for="tel">Ваш телефон</label>
+                            <input name="tel" placeholder="Ваш телефон" type="text" id="mask">    
+                        </div>
+                        <div class="form__inputs-name">
+                            <label for="name">Ваша фамилия</label>
+                            <input name="name" placeholder="Ваша фамилия" type="text">
+                        </div>
+                    </div>
+                    <div class="form__inputs-message">
+                        <label for="message">Комментарий <span>*</span></label>
+                        <input name="message" placeholder="Комментарий"></input>
+                    </div>
+                <div class="form__agreement">
+                    <div class="form__agreement-text-wrapper">
+                        <input class="form__checkbox" type="checkbox" id ="checkbox" name="agreement" value="">
+                        <label class="checkbox-label" for="checkbox"></label>
+                        <span>Согласен на обработку <a href="#">персональных данных</a></span>
+                    </div>
+                    <div>
+                        <button>Отправить форму</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="assets/nouislider.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="script.js"></script>
+</body>
+</html>
