@@ -1,0 +1,27 @@
+
+@import "libs/fonts";
+@import "variables/variables";
+
+* {
+    font-family: "Museo Sans Cyrl", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    color: $black;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@import "blocks/header";
+@import "blocks/nouislider";
+@import "blocks/slider";
+@import "blocks/map";
+@import "blocks/modal";
+@import "blocks/form";

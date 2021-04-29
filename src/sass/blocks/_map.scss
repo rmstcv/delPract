@@ -1,0 +1,19 @@
+.map {
+    height: 600px;
+    background-color: $grey;
+    &__header {
+        padding-top: 80px;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    &__container {
+        width: 1260px;
+        height: 340px;
+        margin-top: 50px;
+    }
+}
+
+.ymaps-2-1-78-map-copyrights-promo {
+    display: none;
+}

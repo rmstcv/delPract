@@ -1,0 +1,50 @@
+.nouislider {
+    height: 330px;
+    background-color: $grey;
+    margin-top: 80px;
+    &__header {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+        padding-top: 80px; 
+    }
+    &__slider {
+        margin-top: 50px;
+    }
+}
+
+.noUi-connect {
+    background: $blue;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 24px;
+    height: 24px;
+    top: -11px;
+    box-shadow: 0px 2px 6px rgba(37, 38, 43, 0.16);
+    background: $blue;
+}
+
+.noUi-handle {
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.noUi-handle:after, 
+.noUi-handle:before {
+    content: none;
+}
+
+.noUi-horizontal {
+    height: 4px;
+    width: 259px;
+}
+
+.noUi-horizontal .noUi-tooltip {
+    width: 93px;
+    height: 34px;
+    margin-top: 32px;
+    top: 0;
+    font-size: 18px;
+}

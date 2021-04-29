@@ -1,0 +1,202 @@
+.form {
+    height: 596px;
+    padding-top: 80px;
+    background-color: $grey;
+
+    &__header {
+        font-weight: bold;
+        font-size: 40px;
+    }
+    &__inputs {
+        height: 262px;
+        margin-top: 50px;
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__inputs-tel {
+        display: inline-block;
+        position: relative;
+        input {
+            width: 400px;
+            height: 50px;
+            border: 1px solid #C0CED9;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding-left: 12px;
+            color: #999999;
+        }
+        input::placeholder {
+            font-size: 18px;
+            color: #999999;
+        }
+        label {
+            margin-top: 4px;
+            display: block;
+            font-size: 13px;
+            color: #565861;
+            line-height: 20px;
+        }
+    }
+
+    &__inputs-name {
+        display: inline-block;
+        position: relative;
+        input {
+            width: 830px;
+            height: 50px;
+            border: 1px solid #C0CED9;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding-left: 12px;
+            &::placeholder {
+                font-size: 18px;
+                color: #999999;
+            }
+        }
+        label {
+            margin-top: 4px;
+            display: block;
+            font-size: 13px;
+            color: #565861;
+            line-height: 20px;
+        }
+
+    }     
+
+    &__inputs-message {
+        position: relative;
+        input {
+            width: 1260px;
+            height: 140px;
+            display: block;
+            border: 1px solid #C0CED9;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding-left: 12px;
+            padding-bottom: 102px;
+            &::placeholder {
+                font-size: 18px;
+                color: #999999;
+                margin-bottom: 102px;
+            }
+        }
+        label {
+            margin-top: 4px;
+            display: block;
+            font-size: 13px;
+            color: #565861;
+            line-height: 20px;
+            margin-top: 24px;
+            span {
+                color: red;
+            }
+        }   
+    }
+
+    &__agreement {
+        margin-top: 36px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        span {
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        &-text-wrapper {
+            align-self: flex-end;
+            position: relative;
+        }
+        a {
+            color: $blue;
+            text-decoration: none;
+            border-radius: 3px;
+            border-bottom: 3px dotted;
+        }
+        button {
+            background-color: $blue;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            font-size: 18px;
+            width: 234px;
+            height: 50px;
+            &:hover {
+                cursor: pointer;
+                background-color:#4F86CF;
+            }
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &__checkbox+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        position: relative;
+        top: 6px;
+        cursor: pointer;
+      }
+
+    &__checkbox+label::before {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        border: 1px solid #adb5bd;
+        border-radius: 3px;
+        background: #FFFFFF;
+        border: 1px solid #C0CED9;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    &__checkbox:not(:disabled):not(:checked)+label:hover::before {
+        border-color: $blue;
+    }
+
+    &__checkbox:checked+label::after {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 14px;
+        border-right: 2px solid $blue;
+        border-bottom: 2px solid $blue;
+        margin-right: 10px;
+        box-sizing: border-box;
+        border-radius: 2px;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 7px;
+        bottom: 7px;
+    }
+}
+
+.errorInput {
+    position: absolute;
+    top: 38px;
+    right: 5px;
+    display: flex;
+    span {
+        align-self: center;
+        color: #FF3600;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}
+
+input:hover {
+    border-color: $blue;
+}
+input:focus {
+    outline:none;
+    border-color: $blue;
+}
